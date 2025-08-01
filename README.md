@@ -18,3 +18,8 @@ A lightweight Flask-based web application for sending bulk emails via CSV upload
 - HTML5 + Bootstrap
 - Git & GitHub
 ---
+## 📦 How to Run
+1. Clone the repository
+2. Install dependencies
+3. Add credentials in config.py
+4. Run the app
