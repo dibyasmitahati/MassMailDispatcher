@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mass Mail Dispatcher</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light p-5">
+  <div class="container">
+    <h2 class="mb-4">📤 Mass Mail Dispatcher</h2>
+    <form method="POST" action="/upload" enctype="multipart/form-data">
+      <div class="mb-3">
+        <label>Upload CSV</label>
+        <input type="file" name="file" class="form-control" required>
+        <small>Column must be named <b>Email</b></small>
+      </div>
+      <div class="mb-3">
+        <label>Email Subject</label>
+        <input type="text" name="subject" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label>Message Body</label>
+        <textarea name="body" rows="5" class="form-control" required></textarea>
+      </div>
+      <button class="btn btn-primary">Send Emails</button>
+    </form>
+  </div>
+</body>
+</html>
